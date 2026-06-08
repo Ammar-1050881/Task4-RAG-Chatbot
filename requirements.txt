@@ -3,8 +3,10 @@ langchain-classic
 langchain-huggingface
 langchain-community
 langchain-text-splitters
-chromadb
+chromadb==0.4.15
 pypdf
 sentence-transformers
 torch
 torchvision
+protobuf==3.20.3
+
