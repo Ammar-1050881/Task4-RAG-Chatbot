@@ -25,11 +25,10 @@ def load_chain():
     except KeyError:
         st.error("HF_TOKEN not found! Please add it to Streamlit Secrets.")
         st.stop()
-    
-    # LLM Setup - Switching to Mistral v0.3 (High Support)
+   # LLM Setup - Mistral v0.3 with the 'conversational' task Novita wants
     llm = HuggingFaceEndpoint(
         repo_id="mistralai/Mistral-7B-Instruct-v0.3",
-        task="text-generation", 
+        task="conversational", # 🌟 Changed back to 'conversational' to satisfy Novita
         huggingfacehub_api_token=hf_token, 
         temperature=0.7,
         max_new_tokens=512,
