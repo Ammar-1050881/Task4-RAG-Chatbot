@@ -1,9 +1,9 @@
 streamlit
-langchain-google-genai>=4.0.0
+langchain-google-genai
 langchain-classic
 langchain-community
 langchain-text-splitters
 chromadb
 pypdf
 sentence-transformers
-# protobuf==3.20.3  <-- ⚠️ Remove or update this to avoid compatibility breaks
+# REMOVED protobuf==3.20.3 to allow modern versions
