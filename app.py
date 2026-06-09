@@ -1,9 +1,12 @@
 import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.chains import ConversationalRetrievalChain
-from langchain.memory import ConversationBufferMemory
+# --- UPDATED IMPORTS FOR 2026 ---
+from langchain_classic.chains import ConversationalRetrievalChain
+from langchain_classic.memory import ConversationBufferMemory
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
+
+# ... (the rest of the load_chain function and chat logic from the previous step)
 
 st.set_page_config(page_title="PDF AI Chatbot", page_icon="🤖")
 st.title("🤖 Your Context-Aware AI (Gemini Edition)")

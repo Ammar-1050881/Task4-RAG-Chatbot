@@ -1,5 +1,6 @@
 streamlit
 langchain-google-genai
+langchain-classic
 langchain-community
 langchain-text-splitters
 chromadb
